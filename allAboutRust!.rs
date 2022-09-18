@@ -1,7 +1,5 @@
 // All about rust language!
 
-// 1. Variables
-
 fn main() {
   // 1.1. Variables
   let x = 5; // immutable
