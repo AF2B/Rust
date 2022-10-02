@@ -256,4 +256,53 @@ fn main() {
       _ => println!("something else"),
     }
   }
+
+  // 1.17. Vector
+  let v: Vec<i32> = Vec::new(); // empty and immutable vector!
+  let v = vec![1, 2, 3]; // vector with values
+  let mut v = Vec::new(); // mutable vector
+  v.push(5);
+  v.push(6);
+  v.push(7);
+  v.push(8);
+
+  let v = vec![1, 2, 3, 4, 5]; // immutable vector
+
+  // 1.18. Vector index
+  let v = vec![1, 2, 3, 4, 5];
+  println!("{}", v[0]);
+  println!("{}", v[1]);
+
+  // 1.19. Vector index out of bounds
+  let v = vec![1, 2, 3, 4, 5];
+  let does_not_exist = &v[100];
+  let does_not_exist = v.get(100);
+
+  // 1.20. Vector iteration
+  let v = vec![100, 32, 57];
+  for i in &v {
+    println!("{}", i);
+  }
+
+  // 1.21. Vector iteration and mutation
+  let mut v = vec![100, 32, 57];
+  for i in &mut v {
+    *i += 50;
+  }
+
+  // 1.22. Vector enum
+
+  // 1.23. Explication of * and &
+  let mut x: u32 = 5;
+  let mut y: u32 = 5;
+
+  let x_ptr: *mut u32 = &mut x;
+  let y_ptr: *mut u32 = &mut y;
+
+  unsafe {
+    *x_ptr = 6;
+    *y_ptr = 10;
+  }
+
+  println!("x = {}, y = {}", x, y);
 }
