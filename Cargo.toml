@@ -1,0 +1,9 @@
+[package]
+name = "Rust"
+version = "0.1.0"
+edition = "2023"
+description = "A Rust tutorial covering various concepts."
+authors = ["Your Name <andre.borbaaf2b@gmail.com><dev_andre.filipe@outlook.com>"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
