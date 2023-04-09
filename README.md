@@ -6,6 +6,8 @@ Para usar esses exemplos, você precisará ter o Rust instalado em sua máquina.
 
 Cada pasta neste repositório contém um arquivo README.md que explica o tópico abordado e fornece instruções para executar o código de exemplo. Alguns exemplos podem exigir que você execute um comando cargo run na linha de comando para compilar e executar o código.
 
+## Lista das funções mais usadas ao final do arquivo
+
 ## Estrutura do diretório
 - basic_types: exemplos de tipos básicos em Rust, como i32, bool e char.
 - control_flow: exemplos de estruturas de controle de fluxo em Rust, como if/else, loop, while e for.
